@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+</head>
+<style>
+    h1 {
+        color: blue;
+    }
+
+    p:first-child {
+        color: brown;
+        background-color: aqua;
+    }
+
+    p:last-child {
+        color: yellow;
+        background-color: green;
+    }
+
+    p:nth-child(11) {
+        background-color: darkred;
+        color: yellow;
+    }
+
+    p:nth-child(4n + 3) {
+        background-color: darkslategray;
+        color: red;
+    }
+
+    p:first-child::first-letter {
+        color: orange;
+        background-color: darkblue;
+        font-size: xx-large;
+    }
+
+    p:nth-child(9)::first-letter {
+        color: orange;
+        background-color: darkblue;
+        font-size: xx-large;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Pseudo-elementos</h1>
+    </header>
+    <div>
+        <p>AAAAA</p>
+        <p>BBBB</p>
+        <p>CCCC</p>
+        <p>🐼 Panda</p>
+        <p>🐷 Pig Face</p>
+        <p>🐅 Tiger</p>
+        <p>🦊 Fox</p>
+        <p>🐆 Leopard</p>
+        <p>🐈 Cat</p>
+        <p>🐱 Cat Face</p>
+        <p>🦁 Lion</p>
+        <p>🦓 Zebra</p>
+        <p>🐻 Bear</p>
+        <p>CCCC</p>
+        <p>🐼 Panda</p>
+        <p>🐷 Pig Face</p>
+        <p>🐅 Tiger</p>
+        <p>🦊 Fox</p>
+        <p>🐆 Leopard</p>
+    </div>
+</body>
+
+</html>
